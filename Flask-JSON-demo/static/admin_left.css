@@ -1,0 +1,23 @@
+a:link,a:visited
+{
+    display:block;
+    font-weight:bold;
+    font-size:14px;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    color:#FFFFFF;
+    background-color: #c4c6ca;
+    width:250px;
+    height:90px;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+    margin-bottom:10px;
+    position: relative;
+    left: 30px;
+    line-height:90px;
+}
+
+a:hover, a:active
+{
+    background-color: black;
+}

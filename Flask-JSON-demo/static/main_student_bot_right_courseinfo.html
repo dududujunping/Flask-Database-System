@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="right.css" />
+    <script>
+        function change(){
+            document.getElementById("demo").innerHTML = "Bill NMB";
+        }
+    </script>
+</head>
+<body>
+<table border="0" class="mytable">
+    <tr>
+        <th>课程名</th>
+        <th>教师姓名</th>
+        <th>成绩</th>
+    </tr>
+    <tr>
+        <td onmouseover="this.style.backgroundColor='black';" onmouseout="this.style.backgroundColor='white';">XX</td>
+        <td onmouseover="this.style.backgroundColor='black';" onmouseout="this.style.backgroundColor='white';">XX</td>
+        <td onmouseover="this.style.backgroundColor='black';" onmouseout="this.style.backgroundColor='white';">XX</td>
+    </tr>
+    <tr>
+        <td onmouseover="this.style.backgroundColor='black';" onmouseout="this.style.backgroundColor='white';">XX</td>
+        <td onmouseover="this.style.backgroundColor='black';" onmouseout="this.style.backgroundColor='white';">XX</td>
+        <td onmouseover="this.style.backgroundColor='black';" onmouseout="this.style.backgroundColor='white';">XX</td>
+    </tr>
+    <tr>
+        <td onmouseover="this.style.backgroundColor='black';" onmouseout="this.style.backgroundColor='white';">XX</td>
+        <td onmouseover="this.style.backgroundColor='black';" onmouseout="this.style.backgroundColor='white';">XX</td>
+        <td onmouseover="this.style.backgroundColor='black';" onmouseout="this.style.backgroundColor='white';">XX</td>
+    </tr>
+</table>
+<a id="right_return" target="_self" href="main_student_bot_right.html"> 返回上一级</a>
+
+</body>
+</html>
+
+<!--
+<script>
+    function makeNode(node,text){
+        var newNode=document.createElement(node);
+        var newText=document.createTextNode(text);
+        newNode.appendChild(newText);
+
+        return newNode;
+    }
+    function tbAdd(){
+
+        var tb1=document.getElementById("tb1");
+        if(tb1.lastChild){
+            var myNode1=makeNode("td","GGG");
+            var myNode2=makeNode("td","HHH");
+            var trNode=document.createElement("tr");
+            trNode.appendChild(myNode1);
+            trNode.appendChild(myNode2);
+            tb1.lastChild.appendChild(trNode);
+        }
+    }
+</script>
+<body >
+<table border="1" cellpadding="0" cellspacing="0" width="300" height="400" id="tb1">
+    <tr><td colspan="2" ><input type="button" value=" Add  " id="btnAdd" name="btnAdd" onclick="tbAdd()"></td></tr>
+    <tr>
+        <td align="center" >AAA</td>
+        <td align="center">BBB</td>
+    </tr>
+    <tr>
+        <td align="center" >CCC</td>
+        <td align="center">DDD</td>
+    </tr>
+    <tr>
+        <td align="center" >EEE</td>
+        <td align="center">FFF</td>
+    </tr>
+
+</table>
+
+-->

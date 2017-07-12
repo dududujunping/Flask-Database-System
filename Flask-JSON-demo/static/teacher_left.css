@@ -1,0 +1,26 @@
+a:link,a:visited
+{
+    border:2px;
+    border-color:black;
+    border-style:solid;
+    display:block;
+    font-weight:bold;
+    font-size:14px;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    color:#FFFFFF;
+    background-color: #c4c6ca;
+    width:250px;
+    height:180px;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+    margin-bottom:25px;
+    position: relative;
+    left: 30px;
+    line-height:180px;
+}
+
+a:hover, a:active
+{
+    background-color: black;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="top_style.css" />
+    <title>mainUI</title>
+    
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+
+    <script>
+        $(document).ready(function(){
+  
+
+            var login = new Object();
+            login.type = "1s";
+            var data = JSON.stringify(login);
+
+        
+            $.ajax({
+                url: "/sendjson",
+                type: "POST",
+                data: data,
+                success: function (msg) {
+                  
+                    alert(msg.name);
+
+                }
+            })
+           
+        });
+    </script>
+    
+</head>
+
+    <frameset rows="200,*" >
+
+        <frame noresize="noresize" src="main_top.html" >
+        <frame noresize="noresize" src="main_student_bot.html" >
+
+    </frameset>
+<noframes> <body> </body> </noframes>
+</html>

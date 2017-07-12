@@ -1,0 +1,60 @@
+.right_default{
+
+    color:#333333;
+    text-align:center;
+    font-weight:bold;
+    background-color: #c4c6ca;
+    font-size:50px;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    width:1400px;
+    height:550px;
+    padding:4px;
+    text-decoration:none;
+    margin-bottom:25px;
+    position: relative;
+    left: 30px;
+    line-height:550px;
+}
+
+.mytable{
+    font-family: verdana,arial,sans-serif;
+    font-size:11px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+    text-align:center;
+    position:relative;
+    left:200px;
+    top:60px;
+    width: 1000px;
+    height: 500px;
+}
+.mytable th{
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+.mytable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+}
+#right_return{
+    position:absolute;
+    right:5px;
+    bottom:5px;
+    color: black;
+    text-indent: 5em;
+    word-spacing: 300px;
+    font-family: 黑体;
+    font-size:20px;
+}
+.changeabletable{
+
+}
+

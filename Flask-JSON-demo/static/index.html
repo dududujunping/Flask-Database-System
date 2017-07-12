@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6 ielt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7 ielt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Paper Stack</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $(":button").click(function(){
+
+                var login = new Object();
+                login.type = "0s";
+
+                var uname = document.getElementById("username");
+                login.username = uname.value;
+                var pass = document.getElementById("password");
+                login.passwd = pass.value;
+                var data = JSON.stringify(login);
+
+                if (uname.value.length == 0)
+                {
+                    alert("用户名不能为空！");
+                    return
+                }
+
+                if (pass.value.length == 0)
+                {
+                    alert("密码不能为空！");
+                    return
+                }
+
+                $.ajax({
+                    url: "/sendjson",
+                    type: "POST",
+                    data: data,
+                    success: function (msg) {
+
+                        if(msg.result == "error")
+                        {alert("用户名或密码错误！");}
+                        else if(msg.result == "student"){
+                            document.indexform.action='main_student.html';
+                            document.indexform.target = "_top";
+                            document.indexform.submit();
+                        }
+                        else if(msg.result == "teacher"){
+                            document.indexform.action='main_teacher.html';
+                            document.indexform.target = "_top";
+                            document.indexform.submit();
+                        }
+                        else if(msg.result == "admin"){
+                            document.indexform.action='main_admin.html';
+                            document.indexform.target = "_top";
+                            document.indexform.submit();
+                        }
+
+
+                    }
+                })
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+<p id="debug1">本段落用于debug</p>
+<div class="container">
+    <section id="content">
+        <form name="indexform">
+            <h1>欢迎来到数据库系统</h1>
+            <div>
+                <input type="text" placeholder="311的用户名" required="" id="username" />
+            </div>
+            <div>
+                <input type="password" placeholder="密码" required="" id="password" />
+            </div>
+            <div>
+                <input type="button" value="登录" />
+                <a href="main_admin.html">点此进入</a>
+                <a href="#">这破按钮没用</a>
+            </div>
+        </form><!-- form -->
+        <div class="button">
+            <a href="#">这破按钮也没用</a>
+        </div><!-- button -->
+    </section><!-- content -->
+</div><!-- container -->
+
+</body>
+</html>

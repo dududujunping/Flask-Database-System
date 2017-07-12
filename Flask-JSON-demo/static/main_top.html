@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function logout(){
+        if (!confirm("您确认退出数据库系统吗？")) return false;
+        document.mainForm.action='/';
+        document.mainForm.target = "_top";
+        document.mainForm.submit();
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="top_style.css" />
+</head>
+
+<body>
+            <img id="school_picture" src="school picture.png">
+            <img id="dududujunping" src="dududujunping.JPG">
+            <form name="mainForm" method="post"></form>
+
+            <div id="sentence1" class="noent">欢迎用户4396 </div>
+
+            <div id="sentence2" class="noent">您的身份是杂种 </div>
+
+            <a id="logout" onclick="logout()" href="#">注销</a>
+
+</body>
+
+</html>
