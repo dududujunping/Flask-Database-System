@@ -1,0 +1,128 @@
+{
+	"type":"0s",
+	"username":"00000",
+	"passwd":"xxx"
+}
+（登录界面客户端发送的包）
+
+{
+	"type":"0r",
+	"result":"enumeration"   (student,teacher,admin,error)
+}
+（登录界面客户端收到的包）
+
+{
+	"type":"1s"
+}
+
+{
+	"type":"1r",
+	"name":"xxx"
+}
+（用来显示界面右上角用户的姓名）
+
+{
+	"type":"1.1s"
+}
+
+{
+	"type":"1.1r",
+	"name":"xxx",
+	"sno":"00000",
+	"sname":"xxx",
+	"sex":"xxx",
+	"age":"xxx",
+	"classno":"xxx",
+}
+
+{
+	"type":"2s"
+}
+
+{
+	"type":"2r",
+	"name":"xxx"
+}
+
+{
+	"type":"2.1s"
+}
+
+{
+	"type":"2.1r",
+	"name":"xxx",
+	"tno":"000000",
+	"tname":"xxx",
+	"sex":"xxx",
+	"age":"xxx",
+}
+
+{
+	"type":"2.2s"
+}
+
+{
+	"type":"2.2r",
+	"name":"xxx",
+	"coursecount":"2",
+	"courses":
+	[
+		{
+			"cno":"00000",
+			"cname":"xxxxx"
+		},
+		{
+			"cno":"00001",
+			"cname":"xxxxx"
+		}
+	]
+}
+(两门课程的数组)
+
+{
+	"type":"2.3s"
+}
+
+{
+	"type":"2.3r",
+	"name":"xxx",
+	"studentcoursecount":"2",
+	"studentcourses":
+	[
+		{
+			"cno":"00000",
+			"cname":"xxxxx",
+			"sno":"00000",
+			"sname":"xxxxx",
+			"grade":"90"
+		},
+		{
+			"cno":"00000",
+			"cname":"xxxxx",
+			"sno":"00001",
+			"sname":"xxxxx",
+			"grade":"90"
+		}
+	]
+}
+（收到的成绩）
+
+{
+	"type":"2.3cs",
+	"changedcount":"1",
+	"changed":
+	[
+		{
+			"cno":"00000",
+			"sno":"00000",
+			"grade":"92"
+		}
+	]
+}
+（欲更改的成绩）
+
+{
+	"type":"2.3cr",
+	"success":"true",
+}
+（更改是否成功）
