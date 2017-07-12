@@ -220,3 +220,23 @@ form:after {
 .button a:hover {
     background-position: 0 -135px;
 }
+
+#dujunping1{
+    height :900px;
+    width :700px;
+    position: absolute;
+    left:600px;
+    top:0px; }
+#dujunping2{
+    height :900px;
+    width: ;
+    position: absolute;
+    left:1300px;
+    top:0px;
+}
+#dujunping3{
+    height :900px;
+    position: absolute;
+    left:0px;
+    top:0px;
+}

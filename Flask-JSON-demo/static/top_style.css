@@ -5,7 +5,7 @@ body{
 #sentence1{
     position:absolute;
     left:550px;
-    top:50px;
+    top:80px;
     text-indent: 5em;
     word-spacing: 300px;
     color: black;
@@ -18,7 +18,7 @@ body{
 #sentence2{
     position:absolute;
     left:800px;
-    top:50px;
+    top:80px;
     text-indent: 5em;
     word-spacing: 300px;
     color: black;
@@ -39,7 +39,7 @@ body{
 }
 #school_picture{
     position:absolute;
-    top: 50px;
+    top: 40px;
     left:50px;
     height:120px;
     width:500px;
@@ -47,7 +47,7 @@ body{
 #dududujunping{
     position:absolute;
     top: 25px;
-    right: 150px;
+    right: 250px;
     height: 150px;
 }
 .noent

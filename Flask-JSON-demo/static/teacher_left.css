@@ -10,17 +10,41 @@ a:link,a:visited
     color:#FFFFFF;
     background-color: #c4c6ca;
     width:250px;
-    height:180px;
+    height:90px;
     text-align:center;
     padding:4px;
     text-decoration:none;
     margin-bottom:25px;
     position: relative;
+    top: 50px;
     left: 30px;
-    line-height:180px;
+    line-height:90px;
 }
 
 a:hover, a:active
 {
     background-color: black;
+}
+#dujunpingdiv{
+    height: 200px;
+    width: 200px;
+    background-image: url(dududujunping4.JPG);
+    filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+    -moz-background-size:100% 100%;
+    background-size:100% 100%;
+    position: absolute;
+    left : 65px;
+    bottom : 30px;
+}
+
+#dujunpingdiv:hover{
+    height: 200px;
+    width: 200px;
+    background-image: url(dududujunping5.JPG);
+    filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+    -moz-background-size:100% 100%;
+    background-size:100% 100%;
+    position: absolute;
+    left : 65px;
+    bottom : 30px;
 }
